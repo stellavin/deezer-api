@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "https://deezer-web.web.app",
+  origin: ["http://localhost:3000", "https://deezer-web.web.app"],
 };
 
 app.use(cors(corsOptions));
