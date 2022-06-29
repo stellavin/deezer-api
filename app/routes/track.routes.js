@@ -10,7 +10,7 @@ module.exports = function (app) {
   });
 
   app.post("/api/search", controller.searchTrack);
-  app.get("/api/album", controller.album);
-  app.get("/api/artist", controller.getArtist);
-  app.get("/api/getTracks", controller.getTracks);
+  app.post("/api/album", controller.album);
+  app.post("/api/artist", controller.getArtist);
+  app.post("/api/getTracks", controller.getTracks);
 };
